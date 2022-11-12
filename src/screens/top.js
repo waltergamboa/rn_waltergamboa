@@ -66,7 +66,7 @@ const Top = ({ navigation }) => {
   };
 
   const mejorJugada = () => {
-    if (result) {
+    if (result.length > 0) {
       const maxValue = Math.max(...result.map((x) => parseInt(x.puntos)));
       const mejor = result.filter((x) => parseInt(x.puntos) == maxValue);
 
@@ -91,6 +91,7 @@ const Top = ({ navigation }) => {
     } else {
       return (
         <View style={styles.emptyContainer}>
+          <Text></Text>
           <Text style={styles.emptyText}>No hay jugadas</Text>
         </View>
       );

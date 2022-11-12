@@ -14,7 +14,7 @@ return async (dispatch) => {
     try {
         const result = await getJugador();
         const jugador = result?.rows?._array
-        
+     
          dispatch({
              type: SELECT_JUGADOR,
              jugador
@@ -30,7 +30,7 @@ return async (dispatch) => {
 export const datosJugador =  (name, image, address, coords)=>{
     return async (dispatch) => {
         try {
-            const result = await insertJugador(name, image, "tres", "cuatro");;
+            const result = await insertJugador(name, image, "0", "0");;
             const id = result?.insertId; 
 
             dispatch({

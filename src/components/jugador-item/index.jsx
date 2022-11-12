@@ -6,6 +6,7 @@ import colors from "../../constants/colors";
 import { styles } from "./styles";
 
 const JugadorItem = ({ item, onSeleccionar }) => {
+    console.log(item.name)
     return (
             <TouchableOpacity style={styles.container} onPress={() => onSeleccionar(item.id, item.name)}>
             <Image style={styles.image} source={{uri: item.image}}></Image>  

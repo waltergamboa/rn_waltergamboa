@@ -1,0 +1,4 @@
+export const capitalesTypes = {
+    SELECT_CAPITAL: "SELECT_CAPITAL",
+    CORRECTO_INCORRECTO: "CORRECTO_INCORRECTO"
+}

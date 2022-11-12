@@ -1,0 +1,5 @@
+export const jugadasTypes = {
+    AGREGAR_JUGADA: "AGREGAR_JUGADA",
+    GET_JUGADAS: "GET_JUGADAS",
+    DELETE_JUGADAS: "DELETE_JUGADAS"
+}
